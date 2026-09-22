@@ -9,9 +9,9 @@ the skeleton every later day hangs on. No gRPC, no storage yet.
 
 1. Create the module and folders:
    ```bash
-   mkdir -p ~/platform_engineering_skills/flowops/gateway
-   cd ~/platform_engineering_skills/flowops/gateway
-   go mod init github.com/<your-handle>/flowops/gateway
+   mkdir -p ~/platform_engineering_skills/gateway-week/gateway
+   cd ~/platform_engineering_skills/gateway-week/gateway
+   go mod init github.com/<your-handle>/gateway-week/gateway
    mkdir -p internal/statemachine
    ```
 2. In `internal/statemachine`, define:

@@ -32,6 +32,9 @@ gateway-week/
     05-retry-policy.md
     06-grpc-essentials.md
     07-observability.md
+  teaching/grpc-fundamentals/  deep-dive: what gRPC is, protobuf syntax,
+                               server anatomy (nafmock walkthrough), and the
+                               devreg build-it-yourself exercise. Do BEFORE day 3.
   assignments/           WHAT to do each day (tasks, acceptance criteria, commit)
     day1-saturday.md
     day2-sunday.md
@@ -40,15 +43,26 @@ gateway-week/
     day5-wednesday.md
     day6-thursday.md
     day7-friday.md
+  mock-grpcServer/       CODE: the mock NAF/TFS platform (built, tested) —
+                         your gateway's downstream, with fault injection
+  gateway/               CODE: the gateway itself (you build this, day 1+)
+  devreg/                CODE: teaching-track practice server (you build this)
 ```
 
 ## Code location
 
-Docs live here. Your Go code goes in `platform_engineering_skills/flowops/gateway/`
-so it stays part of the capstone repo. Target layout:
+All code lives inside `gateway-week/` too. Three Go modules:
+
+| Folder            | What | Status |
+| ----------------- | ---- | ------ |
+| `mock-grpcServer/` | Mock NAF/TFS platform the gateway calls — fault-injection behaviors, execution counters, admin API. See its README. | done, tested |
+| `gateway/`         | The gateway you are building. Target layout below. | yours, day 1+ |
+| `devreg/`          | Practice service from the teaching track. | yours, before day 3 |
+
+Target gateway layout:
 
 ```
-flowops/gateway/
+gateway-week/gateway/
   go.mod
   cmd/gateway/main.go          entrypoint
   internal/statemachine/       states + transitions
@@ -85,8 +99,15 @@ flowops/gateway/
 
 ## Prerequisites
 
-- Go >= 1.22 installed (`/usr/local/go/bin` on PATH)
-- `protoc` + Go plugins (installed in day 3 instructions)
+Toolchain is already installed user-local on this machine (no sudo needed):
+
+```bash
+export PATH=$HOME/.local/go/bin:$HOME/.local/bin:$HOME/go/bin:$PATH
+go version        # go1.27.x
+protoc --version  # libprotoc 29.x
+```
+
+- Go, protoc, and both protoc-gen plugins (`~/go/bin`) are ready
 - Basic Docker (only needed if you want to containerize at the end — optional)
 
 ## Definition of done

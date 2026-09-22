@@ -6,7 +6,7 @@ on Friday you only assemble, not scramble.
 ## 1. Repository or branch containing the gateway
 
 - Branch `gateway-week` (or work on `main` if you prefer), repo =
-  `platform_engineering_skills` with code under `flowops/gateway/`.
+  `platform_engineering_skills` with code under `gateway-week/gateway/`.
 - Artifact: `git log --oneline` shows one commit per day.
 
 ## 2. One meaningful commit hash
@@ -67,7 +67,7 @@ operation's real semantics where you know them).
 
 ## Assembly (Friday, ~1h)
 
-1. `flowops/gateway/docs/design-note.md`: architecture pointer, decisions D1-D4,
+1. `gateway-week/gateway/docs/design-note.md`: architecture pointer, decisions D1-D4,
    retry note, pasted test outputs, demo transcripts.
-2. `flowops/gateway/docs/demos.md`: exact commands to reproduce each demo.
-3. Final README for `flowops/gateway/`: what it is, how to run, how to test.
+2. `gateway-week/gateway/docs/demos.md`: exact commands to reproduce each demo.
+3. Final README for `gateway-week/gateway/`: what it is, how to run, how to test.

@@ -58,7 +58,7 @@ trace in logs and a number in metrics; any line is findable by correlation ID.
       and `gateway_retries_total` tell a consistent story
 - [ ] `/metrics` exposes every family above; `/healthz` 200
 - [ ] Paste 5-10 log lines + relevant metrics output into
-      `flowops/gateway/docs/samples.md` (this is Friday evidence, capture it now)
+      `gateway-week/gateway/docs/samples.md` (this is Friday evidence, capture it now)
 - [ ] `go test -race ./...` green
 
 ## Commit

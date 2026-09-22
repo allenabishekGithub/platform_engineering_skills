@@ -32,7 +32,7 @@ Manual demo procedure for #9 (script it as `docs/demos.md`):
 ## Task 2 — Run and capture the evidence
 
 Work through `evidence-checklist.md` top to bottom. Capture into
-`flowops/gateway/docs/`:
+`gateway-week/gateway/docs/`:
 
 - `samples.md` — log lines + metrics output (from Thursday, refreshed)
 - `demos.md` — exact commands + transcripts for duplicate, timeout, restart
@@ -40,7 +40,7 @@ Work through `evidence-checklist.md` top to bottom. Capture into
 
 ## Task 3 — The design note (deliverable)
 
-`flowops/gateway/docs/design-note.md`, roughly 2 pages:
+`gateway-week/gateway/docs/design-note.md`, roughly 2 pages:
 
 1. **Architecture** — your final mermaid diagram (adapt `gateway-week/architecture.md`
    to your real names) + one paragraph.
@@ -55,7 +55,7 @@ Work through `evidence-checklist.md` top to bottom. Capture into
 ## Task 4 — Final polish
 
 - [ ] `go test -race ./...` and `go vet ./...` clean; golangci-lint if installed
-- [ ] `flowops/gateway/README.md`: build, run, test, demo instructions
+- [ ] `gateway-week/gateway/README.md`: build, run, test, demo instructions
 - [ ] Re-read your week's commits; pick the meaningful hash (Tuesday's, most likely)
 - [ ] Verify every box in `evidence-checklist.md` has an artifact behind it
 

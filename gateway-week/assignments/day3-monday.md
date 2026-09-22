@@ -1,18 +1,18 @@
 # Day 3 (Monday) — Protobuf contract and gRPC server
 
-**Read first:** concepts/06
+**Read first:** `teaching/grpc-fundamentals/` (if you have not built `devreg` yet, do that track first — day 3 assumes it)
 
 **Goal:** the wire contract, generated Go code, a running server skeleton with
 interceptor plumbing, and your first bufconn integration test.
 
 ## Tasks
 
-1. Install tooling:
+1. Tooling is already installed user-local (no sudo on this machine):
    ```bash
-   sudo apt install -y protobuf-compiler
-   go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
-   go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
-   protoc --version   # any 3.x works with current plugins
+   export PATH=$HOME/.local/go/bin:$HOME/.local/bin:$HOME/go/bin:$PATH
+   go version        # go1.27.x
+   protoc --version  # libprotoc 29.x
+   which protoc-gen-go protoc-gen-go-grpc   # both in ~/go/bin
    ```
 2. Create `api/gateway/v1/gateway.proto` per concepts/06: `Execute` +
    `GetOperation` rpcs, `ExecuteRequest`/`GetOperationRequest`/`ExecuteResponse`.

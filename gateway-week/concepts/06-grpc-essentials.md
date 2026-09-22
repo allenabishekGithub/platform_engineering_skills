@@ -15,7 +15,7 @@ syntax = "proto3";
 
 package gateway.v1;
 
-option go_package = "github.com/<you>/flowops/gateway/api/gateway/v1;gatewayv1";
+option go_package = "github.com/<you>/gateway-week/gateway/api/gateway/v1;gatewayv1";
 
 message ExecuteRequest {
   string operation = 1;     // which TFS/NAF operation
