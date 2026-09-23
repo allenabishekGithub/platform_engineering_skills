@@ -146,6 +146,11 @@ ApplyOperationResponse`. Deliberately generic (`operation` string + opaque
 `payload` bytes): when you get access to the real NAF/TFS contract at work,
 rewrite the adapter, not the gateway.
 
+Python twin: **built and tested** at `../mock-grpcServer-py/` — identical
+contracts, so every command in this README works against either. The build
+spec that produced it is `../python/06-build-nafmock-python.md`, and its
+README has a "Go vs Python notes" section worth reading.
+
 ## Tests
 
 ```bash

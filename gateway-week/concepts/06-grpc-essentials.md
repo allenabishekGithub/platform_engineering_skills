@@ -1,5 +1,10 @@
 # 06 — gRPC essentials
 
+> Python reader: the grpcio translation (same proto, servicer classes,
+> metadata, health/reflection, ephemeral-port testing) is
+> `python/02-grpc-essentials.md`. Read this one first — the lifecycle and
+> codes sections are language-neutral.
+
 ## What you need this week
 
 - proto3 file defining one service with (at least) `Execute` and a status query

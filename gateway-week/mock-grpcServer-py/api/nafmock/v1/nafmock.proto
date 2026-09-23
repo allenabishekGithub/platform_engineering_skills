@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package nafmock.v1;
+
+option go_package = "github.com/allenabishekGithub/platform_engineering_skills/gateway-week/mock-grpcServer/api/nafmock/v1;nafmockv1";
+
+message ApplyOperationRequest {
+  string operation = 1;
+  bytes payload = 2;
+}
+
+message ApplyOperationResponse {
+  string handle = 1;
+  string applied_at = 2;
+  bytes echo = 3;
+}
+
+service NAFMock {
+  rpc ApplyOperation(ApplyOperationRequest) returns (ApplyOperationResponse);
+}

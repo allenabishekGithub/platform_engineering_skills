@@ -1,5 +1,8 @@
 # 04 — Context and deadlines
 
+> Python reader: the same concepts translated to `ServicerContext`,
+> `threading.Event` and asyncio live in `python/01-context-and-deadlines.md`.
+
 ## What context is
 
 `context.Context` is Go's mechanism for carrying three things through a call

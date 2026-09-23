@@ -1,5 +1,9 @@
 # 07 — Observability
 
+> Python reader: prometheus_client + stdlib JSON logging equivalent is
+> `python/03-observability.md` — including the Counter `_total` naming trap
+> that breaks metric parity.
+
 Three pillars for this week: **structured logs**, **metrics**, **correlation
 IDs**. (Traces would be the fourth — out of scope, noted as future work.)
 

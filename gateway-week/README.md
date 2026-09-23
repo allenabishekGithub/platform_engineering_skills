@@ -43,19 +43,25 @@ gateway-week/
     day5-wednesday.md
     day6-thursday.md
     day7-friday.md
-  mock-grpcServer/       CODE: the mock NAF/TFS platform (built, tested) —
+  python/                the SAME material as Python equivalents — read whichever
+                         language you're comfortable with (see python/README.md
+                         for the mapping; the gateway itself stays Go per the brief)
+  mock-grpcServer/       CODE: the mock NAF/TFS platform (Go, built, tested) —
                          your gateway's downstream, with fault injection
+  mock-grpcServer-py/    CODE: the same mock in Python (built, tested) —
+                         identical contracts; use either, mix freely
   gateway/               CODE: the gateway itself (you build this, day 1+)
   devreg/                CODE: teaching-track practice server (you build this)
 ```
 
 ## Code location
 
-All code lives inside `gateway-week/` too. Three Go modules:
+All code lives inside `gateway-week/` too:
 
 | Folder            | What | Status |
 | ----------------- | ---- | ------ |
-| `mock-grpcServer/` | Mock NAF/TFS platform the gateway calls — fault-injection behaviors, execution counters, admin API. See its README. | done, tested |
+| `mock-grpcServer/` | Mock NAF/TFS platform (Go) — fault-injection behaviors, execution counters, admin API. See its README. | done, tested |
+| `mock-grpcServer-py/` | The same mock in Python — identical contracts, mix freely with the Go one. | done, tested |
 | `gateway/`         | The gateway you are building. Target layout below. | yours, day 1+ |
 | `devreg/`          | Practice service from the teaching track. | yours, before day 3 |
 
